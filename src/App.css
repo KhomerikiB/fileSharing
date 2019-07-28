@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|PT+Sans:400,700|Roboto:100,300,400,500&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: "Open Sans Condensed", sans-serif;
+  font-family: "PT Sans", sans-serif; */
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(27, 101, 246);
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner-container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 30px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.inlineflex-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo span {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #fff;
+  font-size: 35px;
+  margin-left: 15px;
+  text-transform: uppercase;
+}
+.desc-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 90px;
+  margin-top: 15px;
+}
+.desc-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 30px;
+}
+.form-container {
+  width: 100%;
+  background-color: #fff;
+  padding: 0px 0 30px 0px;
+  max-width: 400px;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+.main-input {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  outline: none;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  border: 1px solid rgba(153, 152, 152, 0.2);
+  color: rgb(82, 82, 82);
+  font-family: "PT Sans", sans-serif;
+}
+.padding-sides {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.input-row {
+  margin-top: 10px;
+}
+.input-row label {
+  cursor: pointer;
+}
+.input-row label p {
+  font-size: 12px;
+  margin-bottom: 3px;
+  /* font-family: "Open Sans Condensed", sans-serif; */
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: rgb(153, 152, 152);
+}
+.form-btn {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(27, 101, 246);
+  outline: none;
+  border: none;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: "PT Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.input-file-container {
+  background-color: rgba(23, 80, 202, 0.2);
+  width: 100%;
+  height: 100px;
+}
+.input-file-content {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.input-file-content span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-left: 15px;
+}
+.relative {
+  position: relative;
+}
+.input-file {
+  position: absolute;
+  top: 0px;
+  height: 45px;
+  width: 180px;
+  outline: none;
+  cursor: pointer;
+  opacity: 0;
+}
+.margin-t-xl {
+  margin-top: 40px;
+}
+.added-items-container {
+}
+.added-items-container > div {
+  padding: 10px 0;
+  width: 100%;
+  background-color: transparent;
+  font-size: 15px;
+  color: rgb(82, 82, 82);
+  font-family: "PT Sans", sans-serif;
+}
+.added-items-container > div:not(:last-child) {
+  border-bottom: 1px solid rgba(153, 152, 152, 0.2);
+}
+.added-items-container > div:first-child {
+  margin-top: 10px;
+}
+.flex-space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item-remove {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.error-message {
+  text-align: center;
+  color: #ea2027 !important;
+}
+.download-header {
+  background-color: rgba(27, 101, 246);
+  padding: 20px 15px;
+}
+.sender {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #fff;
+  font-size: 30px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.received-files > div {
+  padding: 10px 0;
+  width: 100%;
+  background-color: transparent;
+  font-size: 15px;
+  color: rgb(82, 82, 82);
+  border-bottom: 1px solid rgba(153, 152, 152, 0.2);
+  font-family: "PT Sans", sans-serif;
+}
+
+@media only screen and (max-width: 900px) {
+  .inner-container {
+    flex-direction: column;
+  }
+  .desc-title {
+    font-size: 30px;
+    margin-top: 5px;
+  }
+  .desc-subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .logo span {
+    font-size: 30px;
+  }
+  .input-file-container {
+    height: 70px;
+  }
+  .margin-t-xl {
+    margin-top: 25px;
+  }
+  form .padding-sides {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sender {
+    font-size: 25px;
+  }
+}
